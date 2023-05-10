@@ -1,0 +1,1 @@
+document.onreadystatechange=function(){"complete"!==document.readyState?(document.querySelector("body").style.visibility="hidden",document.getElementById("loading_indicator").style.visibility="visible"):setTimeout(()=>{document.getElementById("loading_indicator").style.display="none",document.querySelector("body").style.visibility="visible"},)};
