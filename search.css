@@ -1,0 +1,63 @@
+
+
+
+
+
+.contse{
+    border-radius: 15px;
+    box-shadow: 4px 4px 30px rgba(155, 9, 9, 0.918);
+    margin: auto;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:250px ;
+
+
+}
+
+.containerse{
+    width: 250px;
+}
+.containerse form{
+
+    width: 90%;
+    height: 35px;
+    border: 2px solid #c0392b;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+
+}
+.containerse form input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 5px;
+    
+
+}
+.containerse form i{
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

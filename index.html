@@ -1,1 +1,200 @@
-<!DOCTYPE html><html lang="en" dir="ltr"> <head> <meta charset="utf-8"> <title>Chromatic Images</title><meta name="description" content="Discover a world of beautiful, awesome images - from bikes, cars, and cities to night cities and chromatic images. Download free now and start exploring!"> <meta property="og:CopyrightFreeImages" content="Images" /><meta property="og:type" content="Images" /><meta property="og:url" content="" /><meta property="og:image" content="./preview.png" /><link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png"><link rel="manifest" href="./favicon_io/site.webmanifest"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <link rel="stylesheet" href="style.css"> <script src="https://kit.fontawesome.com/a076d05399.js"></script> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> </head> <body> <div id = "loading_indicator"> </div> <div> <input type="checkbox" class="checkbox" id="checkbox"> <label for="checkbox" class="checkbox-label"> <i class="fas fa-moon"></i> <i class="fas fa-sun"></i> <span class="ball"></span> </label> </div> <h1>Chromatic Images</h1> <div class="socialwrapper"> <div id="folo">Follow us:</div> <a href="https://www.facebook.com/profile.php?id=100081154407980"><div class="bg-ico" id="facebook"><i class="fab fa-facebook social facebook fa-1x"></i></div></a> <a href="https://twitter.com/Flix64W35127"><div class="bg-ico" id="twitter"><i class="fab fa-twitter social twitter fa-1x"></i></div></a> <a href="https://www.instagram.com/flix646972/"><div class="bg-ico" id="instagram"><i class="fab fa-instagram social instagram fa-1x"></i></div></a> <a href="https://www.youtube.com/@Chromatic-Images"><div class="bg-ico" id="youtube"><i class="fab fa-youtube social youtube fa-1x"></i></div></a> </div> <div class="lightbox"> <div class="wrapper"> <header> <div class="details"> <i class="uil uil-camera"></i> <span>Image Preview</span> </div> <div class="buttons"><i class="close-icon uil uil-times"></i></div> </header> <div class="preview-img"> <div class="img"><img src="" alt="preview-img"></div> <div class="dld"><a href="" download>Download</a></div> </div> </div> </div> <div class="wrapper" id="style-7"> <nav> <div class="items"> <span class="item active" data-name="all">All</span> </div> </nav> </div> <div class="gallery"> <div class="images"> </div> </div> <script src="script.js" defer></script> <script src="loa.js"></script> </body></html>
+
+<!DOCTYPE html>
+        <html lang="en" dir="ltr"> 
+            <head> <meta charset="utf-8"> 
+                <title>Chromatic Images</title>
+                <meta name="description" content="Discover a world of beautiful, awesome images - from bikes, cars, and cities to night cities and chromatic images. Download free now and start exploring!">
+                 <meta property="og:CopyrightFreeImages" content="Images" /><meta property="og:type" content="Images" /><meta property="og:url" content="" /><meta property="og:image" content="./preview.png" />
+                    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+                    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+                        <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+                        <link rel="manifest" href="./favicon_io/site.webmanifest">
+                        
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+                        
+                        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+
+
+                        <link rel="stylesheet" href="style.css"> 
+                        <link rel="stylesheet" href="search.css"> 
+                         <!--SEARCH ICONS-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
+                        
+
+                        </script> 
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> 
+                    </head> 
+                        <body>
+                             
+                                 <button class="my_bttn" style="z-index: 1;">
+                                  <i class="fa fa-arrow-up"></i>
+                              </button>
+                              <div  style="z-index: 1;"  class="popup">
+                                <button id="close">&times;</button>
+                               
+                                
+                            </div>
+                            
+                                 <div> <input type="checkbox" class="checkbox" id="checkbox"> <label for="checkbox" class="checkbox-label"> <i class="fas fa-sun"></i> <i class="fas fa-moon"></i> <span class="ball"></span> </label> 
+                                </div>
+
+
+                                
+                                <div w3-include-html="nav.html"></div>  
+                                  
+                              
+                                
+
+
+
+                              
+                              <div class="contse">
+                                <section class="containerse">
+                                    <form >
+                                        <i class="fas fa-search"></i>                                         <input 
+                                          type="text" 
+                                          oninput="liveSearch()" 
+                                          id="searchbox" 
+                                          placeholder="Search filter"
+                                        >
+                                    </form>
+                                </section>
+                            </div>
+                    
+
+
+
+
+                                         </div> 
+                                    </div>
+                             </div>
+                              <div class="wrapper" id="style-7"> <nav> <div class="items"> <span class="item active" data-name="all">All</span> </div> </nav> 
+                            </div>
+                            <div class="loader-container">
+                             <div class="gallery">
+                              <div id = "loading_indicator"> 
+                              </div>
+                               <div class="images"> </div>
+                             </div>
+                             </div>
+                             <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+                             <script>
+                               Fancybox.bind('[data-fancybox="gallery"]', {
+                                 //
+                
+                               }); 
+
+    
+                             </script>
+                              <script >
+                                window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        1000
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+
+const checkbox=document.getElementById("checkbox");
+checkbox.addEventListener("change",()=>{document.body.classList.toggle("dark")});
+
+
+var a=["Bikes","Car","City","House","Sky"];
+
+
+for(f=0;f<a.length;f++){const c=document.getElementsByClassName("items")[0];
+
+c.innerHTML+='<span class="item" data-name="'+a[f]+'">'+a[f]+"</span>"}
+
+
+
+
+for(var l=function(f){for(var t=1;t<=40;t++){const s=document.getElementsByClassName("images")[0];s.innerHTML+='<div class="img" data-name="'+a[f]+'"><a data-fancybox="gallery" href="./'+a[f]+'/pic ('+t+').jpg "><img  src="'+a[f]+"/pic ("+t+').jpg" alt="img"><a class="zz" href="./'+a[f]+'/pic ('+t+').jpg" download target="_blank"><i class="fa-solid fa-cloud-arrow-down" style="color: #63E6BE;"></i></a></a></div>'}},b=0;b<a.length;b++)
+
+l(b);
+
+
+const filterItem=document.querySelector(".items"),filterImg=document.querySelectorAll(".images .img");
+
+console.log(filterImg),window.onload=()=>{filterItem.onclick=e=>{var t;e.target.classList.contains("item")&&(filterItem.querySelector(".active").classList.remove("active"),e.target.classList.add("active"),t=e.target.getAttribute("data-name"),filterImg.forEach(e=>{e.getAttribute("data-name")==t||"all"==t?(e.classList.remove("hide"),e.classList.add("show")):(e.classList.add("hide"),e.classList.remove("show"))}))};
+for(let e=0;e<filterImg.length;e++)filterImg[e].setAttribute("onclick","")};
+
+
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop()>30){
+	    $('.my_bttn').fadeIn(250);
+	   
+	}
+	else{
+	    $('.my_bttn').fadeOut(250);
+	}
+    });
+    $('.my_bttn').click(function(){
+	$('html,.wrapper').animate(
+	    {scrollTop:0},40
+	);
+    });
+});
+function liveSearch() {
+  // Locate the card elements
+  let cards = document.querySelectorAll('.item')
+  // Locate the search input
+  let search_query = document.getElementById("searchbox").value;
+  // Loop through the cards
+  for (var ji = 0; ji < cards.length; ji++) {
+    // If the text is within the card...
+    if(cards[ji].innerText.toLowerCase()
+      // ...and the text matches the search query...
+      .includes(search_query.toLowerCase())) {
+        // ...remove the `.is-hidden` class.
+        cards[ji].classList.remove("is-hidden");
+    } else {
+      // Otherwise, add the class.
+      cards[ji].classList.add("is-hidden");
+    }
+  }
+}
+
+                              </script>
+                            
+                            
+
+		<script src="loa.js"></script>
+		
+
+		
+                              
+  
+ 
+
+
+   
+    <div w3-include-html="footer.html"></div>
+
+
+
+                <script src="include.js"></script>
+                             </body>
+        
+</html>
